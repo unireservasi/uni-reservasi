@@ -1014,6 +1014,15 @@ main {
         gap: 10px;
         font-size: 16px;
     }
+
+    .footer-location {
+        width: 50%;
+    }
+
+    .footer-location p {
+        line-height: 25px;
+    }
+
     .footer-social-media {
         display: flex;
         flex-direction: row;

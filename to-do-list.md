@@ -4,11 +4,11 @@
 
 4. serah terima invoice dp
 
-5. beli domain di jagoan hosting
+5. beli domain di jagoan hosting (done)
 
-6. hosting website
+6. hosting website (done)
 
-7. ganti alamat domain di file xml, robots.txt, google console
+7. ganti alamat domain di file xml, robots.txt, google console (done)
 
 8. Bikin tutorial video untuk setting supabase
 
