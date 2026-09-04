@@ -477,9 +477,11 @@ main {
     gap: 20px;
 }
 
-.footer-social-media {
-    display: flex;
-    gap: 20px;
+.footer-social-media img {
+    height: 30px;
+    width: 140px;
+    filter: brightness(0) invert(1);
+    opacity: 0.85;
 }
 
 @media only screen and (min-width: 577px) and (max-width: 768px) {
@@ -513,14 +515,13 @@ main {
         flex: 0 0 40%;
     }
 
-    .footer-location{
+    .footer-location {
         width: 90%;
     }
 }
 
 /* ukuran tablet */
 @media only screen and (min-width: 769px) and (max-width: 1023px) {
-
     .kamar-header h1 {
         font-size: 42px;
     }
@@ -560,7 +561,7 @@ main {
         flex: 0 0 45%;
     }
 
-    .footer-location{
+    .footer-location {
         width: 80%;
     }
 }
@@ -630,7 +631,7 @@ main {
         color: var(--secondary-color);
     }
 
-    .kamar-header{
+    .kamar-header {
         padding: 0 70px;
     }
     .kamar {
@@ -713,7 +714,7 @@ main {
         font-size: 16px;
     }
 
-    .footer-location{
+    .footer-location {
         width: 50%;
     }
     .footer-social-media {
@@ -723,7 +724,9 @@ main {
     }
 
     .footer-social-media img {
-        height: 32px;
-        width: 32px;
+        height: 30px;
+        width: 140px;
+        filter: brightness(0) invert(1);
+        opacity: 0.85;
     }
 }
