@@ -718,7 +718,9 @@ main {
     display: flex;
     align-items: center;
     gap: 20px;
+    line-height: 24px;
 }
+
 
 .footer-social-media {
     display: flex;
@@ -733,6 +735,7 @@ main {
     .hero-text {
         width: 80%;
     }
+
 }
 
 @media only screen and (min-width: 577px) and (max-width: 768px) {
@@ -794,6 +797,10 @@ main {
 
     .fasilitas-card p {
         font-size: 16px;
+    }
+
+    .footer-location{
+        width: 90%;
     }
 }
 
@@ -857,6 +864,10 @@ main {
 
     .fasilitas-card p {
         font-size: 16px;
+    }
+
+    .footer-location{
+        width: 80%;
     }
 }
 
@@ -1013,6 +1024,10 @@ main {
     .footer-location {
         gap: 10px;
         font-size: 16px;
+    }
+
+    .footer-location {
+        width: 50%;
     }
     .footer-social-media {
         display: flex;

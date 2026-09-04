@@ -98,7 +98,7 @@ function tampilkanRoom(room) {
             </div>
             <div class="about-button">
                 <img src="../assets/icons/whatsapp-icon-white.png" alt="whatsapp-icon" loading="lazy">
-                <a href="">Reservasi Via Whatsapp</a>
+                <a href="https://wa.me/+6287779337763" target="_blank">Reservasi Via Whatsapp</a>
             </div>
         </div>
     </div>
@@ -138,7 +138,7 @@ function tampilkanRoom(room) {
             <div class="detail-button-container">
                 <div class="detail-button">
                     <img src="../assets/icons/whatsapp-icon-white.png" alt="whatsapp icon" loading="lazy">
-                    <a href="">Reservasi Via Whatsapp</a>
+                    <a href="https://wa.me/+6287779337763" target="_blank">Reservasi Via Whatsapp</a>
                 </div>
             </div>
         </div>

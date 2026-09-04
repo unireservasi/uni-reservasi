@@ -444,7 +444,7 @@ main {
 
 .footer-header-text h1 {
     text-transform: uppercase;
-    font-family: "Cormoarant", sans-serif;
+    font-family: "Cormorant Garamond", sans-serif;
     font-size: 24px;
     font-weight: 600;
     letter-spacing: 1.2px;
@@ -512,6 +512,10 @@ main {
     .kamar-produk-img {
         flex: 0 0 40%;
     }
+
+    .footer-location{
+        width: 90%;
+    }
 }
 
 /* ukuran tablet */
@@ -554,6 +558,10 @@ main {
 
     .kamar-produk-img {
         flex: 0 0 45%;
+    }
+
+    .footer-location{
+        width: 80%;
     }
 }
 
@@ -698,6 +706,15 @@ main {
     .footer-location {
         gap: 10px;
         font-size: 16px;
+    }
+
+    .footer-location p,
+    .footer-contact p {
+        font-size: 16px;
+    }
+
+    .footer-location{
+        width: 50%;
     }
     .footer-social-media {
         display: flex;
