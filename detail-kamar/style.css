@@ -736,9 +736,14 @@ main {
     fill: #f9f6f2 !important;
 }
 
+.flatpickr-months .flatpickr-month,.flatpickr-current-month .flatpickr-monthDropdown-months{
+    background-color: #222222 !important;
+}
+
 span.flatpickr-weekday {
     color: #a0a0a0 !important;
     font-weight: 600;
+    background-color: #222222 !important;
 }
 
 /* Tanggal Biasa / Ready */

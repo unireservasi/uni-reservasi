@@ -484,9 +484,9 @@ main {
 
 /* Filter Container */
 .filter-container {
-    max-width: 1200px;
     margin: 20px auto 30px auto;
-    padding: 0 20px;
+    padding: 0 10px;
+    width: 100%;
 }
 
 .filter-box {
@@ -503,11 +503,11 @@ main {
 .filter-box label {
     font-size: 0.9rem;
     font-weight: 600;
-    color: var(--accent-color);
+    color: var(--secondary-color);
     font-family: "Montserrat";
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 8px;
 }
 
 .input-group {
@@ -545,6 +545,56 @@ main {
 
 .btn-reset:hover {
     background: #a00000;
+}
+
+.flatpickr-calendar {
+    background: #222222 !important;
+    box-shadow: none !important;
+    color: #f9f6f2 !important;
+    border: none !important;
+}
+
+/* Header & Bulan */
+.flatpickr-months .flatpickr-prev-month,
+.flatpickr-months .flatpickr-next-month,
+.flatpickr-current-month input.cur-year {
+    color: #f9f6f2 !important;
+    fill: #f9f6f2 !important;
+}
+
+.flatpickr-months .flatpickr-month,
+.flatpickr-current-month .flatpickr-monthDropdown-months {
+    background: #222222 !important; /* Ganti dengan warna background yang diinginkan */
+}
+
+
+span.flatpickr-weekday {
+    color: var(--accent-color) !important;
+    font-weight: 600;
+    background: #222222 !important;
+}
+
+/* Tanggal Biasa / Ready */
+.flatpickr-day {
+    color: #f9f6f2 !important;
+    border-radius: 8px !important;
+}
+
+.flatpickr-day:hover {
+    background: #333333 !important;
+}
+
+/* Tanggal Hari Ini (Jika Kosong) */
+.flatpickr-day.today {
+    border: 1px solid #f9f6f2 !important;
+    background: transparent !important;
+}
+
+/* Tanggal Lampau Biasa */
+.flatpickr-day.flatpickr-disabled {
+    color: #555555 !important;
+    background-color: transparent !important;
+    text-decoration: none;
 }
 
 @media only screen and (min-width: 577px) and (max-width: 768px) {
@@ -625,7 +675,7 @@ main {
         flex: 0 0 45%;
     }
 
-    .kamar-produk-img img{
+    .kamar-produk-img img {
         height: 100%;
     }
 
@@ -724,7 +774,7 @@ main {
         flex-direction: row;
     }
 
-    .kamar-produk-img img{
+    .kamar-produk-img img {
         height: 100%;
     }
 
@@ -803,8 +853,9 @@ main {
         opacity: 0.85;
     }
 
-    .filter-container{
+    .filter-container {
         width: 100%;
+        padding: 0 70px;
     }
 
     .filter-box label {
