@@ -511,6 +511,7 @@ main {
 }
 
 .input-group {
+    position: relative;
     display: flex;
     gap: 10px;
 }
@@ -552,6 +553,9 @@ main {
     box-shadow: none !important;
     color: #f9f6f2 !important;
     border: none !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    margin-top: 10px !important;
 }
 
 /* Header & Bulan */
@@ -566,7 +570,6 @@ main {
 .flatpickr-current-month .flatpickr-monthDropdown-months {
     background: #222222 !important; /* Ganti dengan warna background yang diinginkan */
 }
-
 
 span.flatpickr-weekday {
     color: var(--accent-color) !important;
@@ -681,6 +684,16 @@ span.flatpickr-weekday {
 
     .footer-location {
         width: 80%;
+    }
+    .flatpickr-calendar {
+        position: relative;
+        background: #222222 !important;
+        box-shadow: none !important;
+        color: #f9f6f2 !important;
+        border: none !important;
+        margin: auto;
+        left: 20% !important;
+        transform: translateX(-20%) !important;
     }
 }
 
@@ -853,9 +866,16 @@ span.flatpickr-weekday {
         opacity: 0.85;
     }
 
+    .flatpickr-calendar {
+        position: relative;
+        left: 20% !important;
+        transform: translateX(-20%) !important;
+    }
+
     .filter-container {
         width: 100%;
         padding: 0 70px;
+        
     }
 
     .filter-box label {
