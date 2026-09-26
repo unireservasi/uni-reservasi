@@ -6,10 +6,15 @@
         <meta name="description" content="Lihat pilihan kamar apartemen Uni Reservasi Balikpapan lengkap dengan harga, fasilitas, dan kapasitas tamu." />
         <link rel="icon" href="../assets/img/logo.png" />
         <link rel="stylesheet" href="style.css" />
-        <!-- font -->
+
+        <!-- Font -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+        <!-- Flatpickr CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
+        <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/dark.css" />
 
         <!-- AOS -->
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -26,10 +31,11 @@
                 <div class="dot"></div>
             </div>
         </div>
+
         <header>
             <div class="navbar">
                 <div class="navbar-logo">
-                    <img src="../assets/img/logo.png" alt="" />
+                    <img src="../assets/img/logo.png" alt="Logo Uni Reservasi" />
                 </div>
 
                 <div class="navbar-menu">
@@ -40,12 +46,14 @@
                 </div>
 
                 <div class="hamburger-menu" id="hamburger-menu">
-                    <img src="../assets/icons/hamburger-icon.png" alt="" />
+                    <img src="../assets/icons/hamburger-icon.png" alt="Menu" />
                 </div>
+
                 <div class="reservasi-button">
-                    <img src="../assets/icons/whatsapp-icon-white.png" alt="">
-                    <a href="href="https://wa.me/+6287779337763" target="_blank"">Reservasi</a>
+                    <img src="../assets/icons/whatsapp-icon-white.png" alt="WhatsApp Icon">
+                    <a href="https://wa.me/+6287779337763" target="_blank">Reservasi</a>
                 </div>
+            </div>
         </header>
 
         <main>
@@ -58,56 +66,57 @@
                         <a id="lokasi-halaman">Kamar</a>
                     </div>
                 </div>
-                <div class="list-kamar" id="list-kamar">
+
+                <!-- FILTER TANGGAL BOOKING -->
+                <div class="filter-container">
+                    <div class="filter-box">
+                        <label for="date-range"><img src="../assets/icons/date-icon.svg" alt=""> Cari Ketersediaan Kamar:</label>
+                        <div class="input-group">
+                            <input type="text" id="date-range" placeholder="Pilih Tanggal Check-in s/d Check-out..." readonly />
+                            <button id="btn-reset-filter" class="btn-reset" style="display: none;">Reset Filter</button>
+                        </div>
+                    </div>
                 </div>
+
+                <div class="list-kamar" id="list-kamar"></div>
             </section>
+
             <!-- Footer Section -->
-            <footer
-                class="footer"
-                id="footer"
-            >
-                <div class="footer-container" id="footer">
+            <footer class="footer" id="footer">
+                <div class="footer-container">
                     <div class="footer-header">
-                        <img
-                            src="../assets/img/logo.png"
-                            alt="Logo Uni Reservasi"
-                        />
+                        <img src="../assets/img/logo.png" alt="Logo Uni Reservasi" />
                         <div class="footer-header-text">
                             <h1>Uni Reservasi</h1>
                             <h2>Apartemen & Hotel Balikpapan</h2>
                         </div>
                     </div>
+
                     <div class="footer-content">
                         <div class="footer-contact">
-                            <img
-                                src="../assets/icons/phone-icon.png"
-                                alt="Phone Icon"
-                            />
+                            <img src="../assets/icons/phone-icon.png" alt="Phone Icon" />
                             <div class="contact" id="contact"></div>
                         </div>
                         <div class="footer-location">
                             <a href="https://maps.app.goo.gl/JZ1PCWtHft5uFgcr9" target="_blank">
-                                <img
-                                    src="../assets/icons/location-icon.png"
-                                    alt="Location Icon"
-                                />
+                                <img src="../assets/icons/location-icon.png" alt="Location Icon" />
                             </a>
-                            <p>Plaza Balikpapan, Jl. Jenderal Sudirman No.1,
-                                Klandasan Ilir, Balikpapan, Kalimantan Timur</p>
+                            <p>Plaza Balikpapan, Jl. Jenderal Sudirman No.1, Klandasan Ilir, Balikpapan, Kalimantan Timur</p>
                         </div>
                     </div>
+
                     <div class="footer-social-media">
                         <a href="https://www.tiket.com/id-id/homes/indonesia/apartemen-borneo-bay-balikpapan-by-uni-reservasi-1-br-601001673173523802" target="_blank">
-                            <img
-                                src="../assets/icons/tiket-com-vector-logo-seeklogo/tiket-com-seeklogo.png"
-                                alt="Tiket.com Icon"
-                            />
+                            <img src="../assets/icons/tiket-com-vector-logo-seeklogo/tiket-com-seeklogo.png" alt="Tiket.com Icon" />
                         </a>
                     </div>
                 </div>
             </footer>
         </main>
 
+        <!-- Scripts -->
+        <script defer src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+        <script defer src="https://npmcdn.com/flatpickr/dist/l10n/id.js"></script>
         <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
         <script defer src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script defer src="script.js"></script>

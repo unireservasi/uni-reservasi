@@ -631,6 +631,150 @@ main {
     opacity: 0.85;
 }
 
+/* ==========================================
+   ========================================== */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    padding: 20px;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content {
+    background-color: #222222;
+    padding: 24px;
+    border-radius: 16px;
+    position: relative;
+    max-width: 360px;
+    width: 100%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.modal-header h3 {
+    color: #f9f6f2;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.close-modal-btn {
+    background: transparent;
+    border: none;
+    color: #f9f6f2;
+    font-size: 1.5rem;
+    cursor: pointer;
+    line-height: 1;
+    padding: 0 5px;
+}
+
+.btn-check-availability {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background-color: transparent;
+    color: var(--secondary-color);
+    border: 1px solid #222222;
+    background-color: #222222;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    width: 100%;
+    margin-top: 15px;
+    font-family: 'Montserrat';
+}
+
+.btn-check-availability:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+/* ==========================================
+   ========================================== */
+.flatpickr-calendar {
+    background: #222222 !important;
+    box-shadow: none !important;
+    color: #f9f6f2 !important;
+    border: none !important;
+}
+
+/* Header & Bulan */
+.flatpickr-months .flatpickr-month,
+.flatpickr-months .flatpickr-prev-month,
+.flatpickr-months .flatpickr-next-month,
+.flatpickr-current-month .flatpickr-monthDropdown-months,
+.flatpickr-current-month input.cur-year {
+    color: #f9f6f2 !important;
+    fill: #f9f6f2 !important;
+}
+
+span.flatpickr-weekday {
+    color: #a0a0a0 !important;
+    font-weight: 600;
+}
+
+/* Tanggal Biasa / Ready */
+.flatpickr-day {
+    color: #f9f6f2 !important;
+    border-radius: 6px !important;
+}
+
+.flatpickr-day:hover {
+    background: #333333 !important;
+}
+
+/* Tanggal Hari Ini (Jika Kosong) */
+.flatpickr-day.today {
+    border: 1px solid #f9f6f2 !important;
+    background: transparent !important;
+}
+
+/* Tanggal Lampau Biasa */
+.flatpickr-day.flatpickr-disabled {
+    color: #555555 !important;
+    background-color: transparent !important;
+    text-decoration: none;
+}
+
+/* KHUSUS TANGGAL TERISI (BOOKED) -> MERAH #2e0500 */
+.flatpickr-day.booked-date,
+.flatpickr-day.booked-date.today {
+    background-color: #2e0500 !important;
+    color: #ff8888 !important;
+    text-decoration: line-through !important;
+    opacity: 1 !important;
+    cursor: not-allowed !important;
+    border: none !important;
+}
+
 @media only screen and (min-width: 577px) and (max-width: 768px) {
     .about h1 {
         font-size: 40px;

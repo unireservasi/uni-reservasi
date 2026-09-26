@@ -482,6 +482,71 @@ main {
     opacity: 0.85;
 }
 
+/* Filter Container */
+.filter-container {
+    max-width: 1200px;
+    margin: 20px auto 30px auto;
+    padding: 0 20px;
+}
+
+.filter-box {
+    background: #1e1e1e;
+    border: 1px solid #333;
+    padding: 16px 20px;
+    border-radius: 12px;
+    color: #f9f6f2;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.filter-box label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--accent-color);
+    font-family: "Montserrat";
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: 1px solid #444;
+    background: #121212;
+    color: #f9f6f2;
+    font-size: 0.95rem;
+    outline: none;
+    cursor: pointer;
+}
+
+.input-group input:focus {
+    border-color: #c5a880;
+}
+
+.btn-reset {
+    background: #8b0000;
+    color: #ffffff;
+    border: none;
+    padding: 0 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: background 0.2s ease;
+}
+
+.btn-reset:hover {
+    background: #a00000;
+}
+
 @media only screen and (min-width: 577px) and (max-width: 768px) {
     .kamar-header h1 {
         font-size: 40px;
@@ -526,6 +591,7 @@ main {
 
     .kamar-produk {
         min-height: 120px;
+        flex-direction: row;
     }
 
     .kamar-produk-deskripsi {
@@ -557,6 +623,10 @@ main {
 
     .kamar-produk-img {
         flex: 0 0 45%;
+    }
+
+    .kamar-produk-img img{
+        height: 100%;
     }
 
     .footer-location {
@@ -651,6 +721,11 @@ main {
         min-height: 120px;
         height: 500px;
         width: 40%;
+        flex-direction: row;
+    }
+
+    .kamar-produk-img img{
+        height: 100%;
     }
 
     .kamar-produk-deskripsi {
@@ -726,5 +801,13 @@ main {
         width: 140px;
         filter: brightness(0) invert(1);
         opacity: 0.85;
+    }
+
+    .filter-container{
+        width: 100%;
+    }
+
+    .filter-box label {
+        font-size: 20px;
     }
 }

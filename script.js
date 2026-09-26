@@ -24,6 +24,22 @@ async function getRooms() {
     }, 500);
 }
 
+// Function Get Date
+function getHargaHariIni(room) {
+    const today = new Date().getDay(); // Mengembalikan angka 0 (Minggu) sampai 6 (Sabtu)
+
+    if (today === 5) {
+        // Hari Jumat
+        return room.price_friday || room.price_weekday;
+    } else if (today === 6) {
+        // Hari Sabtu
+        return room.price_saturday || room.price_weekday;
+    } else {
+        // Senin - Kamis & Minggu
+        return room.price_weekday;
+    }
+}
+
 function tampilkanRooms(rooms) {
     const listKamar = document.getElementById("list-kamar");
     const footer = document.getElementById("contact");
@@ -33,6 +49,7 @@ function tampilkanRooms(rooms) {
     footer.innerHTML = "";
 
     rooms.forEach((room) => {
+        const hargaAktif = getHargaHariIni(room);
         listKamar.innerHTML += `
             <div class="kamar-produk swiper-slide"> 
                 <div class="kamar-produk-img">
@@ -52,7 +69,7 @@ function tampilkanRooms(rooms) {
                         ${room.status}
                     </span>
                     <h3>
-                            Rp ${room.price.toLocaleString("id-ID")} / malam
+                            Rp ${hargaAktif.toLocaleString("id-ID")} / malam
                     </h3>
                     <a href="detail-kamar/index.html?id=${room.id}">Lihat Detail</a>
                 </div>
